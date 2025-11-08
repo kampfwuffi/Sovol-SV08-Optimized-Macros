@@ -1,7 +1,7 @@
 # **Optimized Macro.cfg &amp; printer.cfg & Orca Start G-Code for stock Sovol SV08**
 <br />
 
-**HOW HARD IS IT TO IMPLEMENT?**
+## **HOW HARD IS IT TO IMPLEMENT?**
 
 > [!IMPORTANT]
 >**Basically it's a work of 15 minutes.**<br />
