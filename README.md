@@ -147,8 +147,6 @@ The individual printer calibration settings will be stored in modified printer.c
 
 ## **STEP 4: Test printer and all fans in Mainsail with sliders, e.g. test prints,….**
 
-==============================
-
 **Why 0.6mm nozzle and PETG as filament?**
 
 - I installed the new Sovol upgrade nozzle with 0.6mm diameter for even faster prints and more reliability (no clogging). The maximum volumetric flow increased from 15mm3/s to 26mm3/s with PETG! It's possible with Sovol SV08.
@@ -158,7 +156,6 @@ Orca slicer can compensate bigger nozzles with quality settings magic (Adaptive 
 
 Therefore these settings are optimized for PETG and 0.6mm nozzle, but it can be adapted for PLA and standard 0.4mm nozzle in Orca / printer.cfg again. See below.
 
-==============================
 
 ## **STEP 5: OPTIONAL for 0.4mm nozzle:**
 
@@ -173,4 +170,8 @@ to
 ```
 nozzle_diameter: 0.400
 ```
-=============================
+
+## **Disclaimer**
+> [!NOTE]
+>This guide and all changes have been made with the best intentions but in the end, it's your responsibility and only your responsibility to apply those changes and modifications to your printer. 
+>Neither the author, contributors nor Sovol is responsible if things go bad, break, catch fire, or start WW3. You do this at your own risk!
