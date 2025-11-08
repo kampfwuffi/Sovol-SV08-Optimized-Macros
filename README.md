@@ -52,9 +52,10 @@ M400; wait until finished
 
 ## **STEP 2: New code for Klipper  (Macro.cfg & printer.cfg)**
 
-Attention: Be sure to have backups of original Macro.cfg and printer.cfg with your serial numbers!
-
-You can compare your original code with this new code here to see all changes (paste original code in left column, new code in right column): https://editor.mergely.com
+> [!TIP]
+> Be sure to have backups of original _Macro.cfg_ and _printer.cfg_ with your serial numbers!
+>
+>You can compare your original code with this new code here to see all changes (paste original code in left column, new code in right column): https://editor.mergely.com
 
 ### **Macro.cfg**
 
@@ -130,18 +131,18 @@ There is a Settings Override Tab in Orca: Set Retraction also to 0.6mm there or 
 
 ## **STEP 3: DO CALIBRATIONS: **
 
-Reboot machine
-Set 0,4mm nozzle in printer.cfg and Orca Slicer if no 0,6mm nozzle installed
-Be sure your serial numbers are pasted from old printer.cfg in new printer.cfg
-Be sure temperatures for nozzle and bed are adjusted in Orca and Macro.cfg (see global_variables). Default are PETG temperatures. For PLA lower temp values required. 
-uncomment hardware upgrade code in Macro.cfg and printer.cfg for Neopixel nozzle LED and chamber fan if installed
-(optional PID Tuning (Menu in LCD display))
-Calibrate Z-offset (Menu in LCD display) - Important!
-Quad Gantry Level  (Menu in LCD display) - Important
-Bed Mesh (Menu in LCD display) - Important
-Auto-Calibrate (= Input Shaping Menu in LCD display) - Important
-Belt Test - Important
-The individual printer calibration settings will be stored in modified printer.cfg (section SAVE_CONFIG)
+- Reboot machine
+- Set 0,4mm nozzle in printer.cfg and Orca Slicer if no 0,6mm nozzle installed
+- Be sure your serial numbers are pasted from old printer.cfg in new printer.cfg
+- Be sure temperatures for nozzle and bed are adjusted in Orca and Macro.cfg (see global_variables). Default are PETG temperatures. For PLA lower temp values required. 
+- Uncomment hardware upgrade code in Macro.cfg and printer.cfg for Neopixel nozzle LED and chamber fan if installed
+- (optional PID Tuning (Menu in LCD display))
+- Calibrate Z-offset (Menu in LCD display) - Important!
+- Quad Gantry Level  (Menu in LCD display) - Important
+- Bed Mesh (Menu in LCD display) - Important
+- Auto-Calibrate (= Input Shaping Menu in LCD display) - Important
+- Belt Test - Important
+- The individual printer calibration settings will be stored in modified printer.cfg (section SAVE_CONFIG)
 
 ## **STEP 4: Test printer and all fans in Mainsail with sliders, e.g. test prints,….**
 
@@ -157,10 +158,10 @@ Therefore these settings are optimized for PETG and 0.6mm nozzle, but it can be 
 
 ## **STEP 5: OPTIONAL for 0.4mm nozzle:**
 
-(It is not recommended to print PETG with standard 0,4mm non-upgrade Sovol nozzle without the nozzle screw! It may damage your bed and toolhead! Replace with upgrade nozzle or 3rd party upgrade by e.g. Microswiss)
+(It is NOT recommended to print PETG with the stock 0,4mm nozzle without the nozzle screw! It may damage your bed and toolhead! Replace with upgrade nozzle or 3rd party upgrade by e.g. _Microswiss_)
 
-Use your own 0.4mm Orca presets except modify Orca machine G-Code and set nozzle to 0.4mm in Extruder 1 tab (Nozzle diameter: 0.6 mm).
-In Addition change this line in printer.cfg:
+Use your 0.4mm Orca presets except modify Orca machine G-Code and set nozzle to 0.4mm in Extruder 1 tab (Nozzle diameter: 0.6 mm).
+In Addition change this line in _printer.cfg_:
 ```
 nozzle_diameter: 0.600 # 0.400 MOD for 0.6mm nozzle install
 ```
