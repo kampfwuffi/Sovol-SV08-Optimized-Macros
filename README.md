@@ -7,8 +7,7 @@ Basically it's a work of 10 minutes.
 Simply copy/paste the code from Macro.cfg and printer.cfg over your original cfgs. Additionally paste your serial numbers from old printer.cfg to new printer.cfg. Optimized Orca Slicer settings are optional EXCEPT Machine start G-Code and 0.6mm nozzle setting in Orca Slicer settings AND printer.cfg if 0.4mm nozzle installed!
 Do STEP 1 TO STEP 5 for best experience.
 
-**ATTENTION:**
-
+> [!CAUTION]
 - Stock Sovol hardware required (with 0.6mm  nozzle). For  0.4mm nozzle minor code adjustment needed in printer.cfg. See below on the end of this article.
 - Stock Sovol SV08 Firmware 2.4.6, this might not work with older and newer firmware in the future!
 - You will have to use all files / settings together for optimal function ( Orca machine G-Code (!) / printer.cfg (Mainsail Klipper) / Macro.cfg (Mainsail Klipper)
@@ -82,14 +81,8 @@ paste over old code in Orca Device Tab -> Machine -> printer.cfg (Save & Reboot)
 
 Be sure the tabs stops are still  inserted in section  [quad_gantry_level] coordinates.
 
-**ATTENTION:**
-
-YOU MUST PASTE YOUR PRINTER/KLIPPER SERIAL IN FOLLOWING SECTIONS:
-[mcu] # NEED YOUR SERIAL PASTED HERE
-serial: PASTE SERIAL HERE!
-
-[mcu extra_mcu] # NEED YOUR SERIAL PASTED HERE
-serial:  PASTE SERIAL HERE!
+> [!CAUTION]
+> YOU MUST PASTE YOUR PRINTER/KLIPPER SERIAL IN FOLLOWING SECTIONS:
 
 ```
 ....
