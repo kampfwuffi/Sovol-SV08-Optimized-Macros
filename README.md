@@ -28,13 +28,6 @@ Heat soaking and other voodoo is no solution, this taco bed fix (metal spacers i
 >- If you are using a 12V fan replacement for the mainboard with a buck converter, then be sure the fan spins up again after shutting off when temperature is low / idle.
 >- Use at own risk, this is WORK IN PROGRESS.
 
-**OPTIMIZATIONS Changelog (firmware 2.4.6 required!):**
-
-Full changelog with previous versions see download section
-
-Version 20 (08.Nov.2025)
-- Fixed a bug in printer.cfg. Please check code with original cfg files to avoid bugs.
-
 ## **STEP 1: ORCA SETTINGS G-Code:**
 Must be used with optimized printer.cfg and Macro.cfg for correct print start (no purge line and blob on bed) and avoid bed scratching in certain cases!
 
