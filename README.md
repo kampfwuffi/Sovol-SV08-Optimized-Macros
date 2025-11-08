@@ -22,10 +22,6 @@
 
 > [!TIP]
 >- Optionally you can uncomment some gcode options if hardware installed (like Neopixel Nozzle LED, chamber fan, etc) -> Search for _"uncomment"_ in gcode to see and unlock the options. It is already preconfigured but not active.
->- I recommend to upgrade your SV08 with this mod to avoid nozzle cleaning blobs and other residuals getting into the Z-belt mechanics: https://www.printables.com/model/1257347-sovol-sv08-z-belt-cover
->- To fix your bed (TACO SHAPE) do this fix: https://www.printables.com/model/1073040-sovol-sv08-taco-bed-fix
-Heat soaking and other voodoo is no solution, this taco bed fix (metal spacers in the center between bed and printer base plate) eliminates the root cause for bad first layers. The bed sinks down when heated because it is not supported in the center.
->- For PETG prints use the smooth side of the PEI plate. PETG sticks too much on coarse side.
 
 
 ## **STEP 1: ORCA SETTINGS Machine start G-Code:**
@@ -152,19 +148,22 @@ There is a Settings Override Tab in Orca: Set Retraction also to 0.6mm there or 
 
 ## **STEP 4: Test printer and all fans in Mainsail with sliders, e.g. test prints,….**
 
+> [!TIP]
+>- I recommend to upgrade your SV08 with this mod to avoid nozzle cleaning blobs and other residuals getting into the Z-belt mechanics: https://www.printables.com/model/1257347-sovol-sv08-z-belt-cover
+>- To fix your bed (TACO SHAPE) do this fix: https://www.printables.com/model/1073040-sovol-sv08-taco-bed-fix
+Heat soaking and other voodoo is no solution, this taco bed fix (metal spacers in the center between bed and printer base plate) eliminates the root cause for bad first layers. The bed sinks down when heated because it is not supported in the center.
+>- For PETG prints use the smooth side of the PEI plate. PETG sticks too much on coarse side.
+
 **Why 0.6mm nozzle and PETG as filament?**
+
+- Why PETG? I can put my prints in the dish washer at 70°C or use outside without deformation. Therefore higher temps in Macro.cfg _global_variables_ gcode.
+
+- These settings are optimized for PETG and 0.6mm nozzle, but it can be adapted for PLA and standard 0.4mm nozzle in Orca / Macro.cfg again.
 
 - I installed the new Sovol upgrade nozzle with 0.6mm diameter for even faster prints and more reliability (no clogging). The maximum volumetric flow increased from 15mm3/s to 26mm3/s with PETG! It's possible with Sovol SV08.
 Orca slicer can compensate bigger nozzles with quality settings magic (Adaptive layer height button, Smooth button, fuzzy skin, ....), except very fine details.
 
-- Why PETG? I can put my prints in the dish washer at 70°C or use outside without deformation. I use only PETG from Geetech, this never fails. Therefore higher temps in Orca settings.
-
-Therefore these settings are optimized for PETG and 0.6mm nozzle, but it can be adapted for PLA and standard 0.4mm nozzle in Orca / printer.cfg again. See below.
-
-
 ## **STEP 5: OPTIONAL for 0.4mm nozzle:**
-
-(It is NOT recommended to print PETG with the stock 0,4mm nozzle without the nozzle screw! It may damage your bed and toolhead! Replace with upgrade nozzle or 3rd party upgrade by e.g. _Microswiss_)
 
 Use your 0.4mm Orca presets except modify Orca machine G-Code and set nozzle to 0.4mm in Extruder 1 tab (Nozzle diameter: 0.6 mm).
 In Addition change this line in _printer.cfg_:
@@ -175,6 +174,9 @@ to
 ```
 nozzle_diameter: 0.400
 ```
+> [!TIP]
+>It is NOT recommended to print PETG with the stock 0,4mm nozzle without the nozzle screw! 
+>It may damage your bed and toolhead! Replace with upgrade nozzle or 3rd party upgrade by e.g. _Microswiss_
 
 ## **Disclaimer**
 > [!NOTE]
