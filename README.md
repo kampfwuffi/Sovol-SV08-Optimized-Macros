@@ -131,8 +131,6 @@ Be sure the tabs stops are still  inserted in section  [quad_gantry_level] coord
 >#*# pid_kd = 783.849
 >```
 
-There is a Settings Override Tab in Orca: Set Retraction also to 0.6mm there or you will get small holes in your print surface from time to time!
-
 ## **STEP 3: DO CALIBRATIONS: **
 
 - Reboot machine
