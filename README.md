@@ -35,6 +35,7 @@ Must be used with optimized _printer.cfg_ and _Macro.cfg_ for correct print star
 START_PRINT EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[bed_temperature_initial_layer_single]
 ```
 
+Copy/Paste over old start gcode in SV08 slicer profile.
 I reduced the code to a single line in the slicer profile, so start gcode is inside Macro.cfg (see next step)
 
 ## **STEP 2: NEW CODE FOR KLIPPER (Macro.cfg & printer.cfg)**
