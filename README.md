@@ -127,6 +127,7 @@ Be sure the tabs stops are still  inserted in section  [quad_gantry_level] coord
 - Be sure temperatures for nozzle and bed are adjusted in (Orca) slicer and _Macro.cfg_ (see global_variables). Default are PETG temperatures. For PLA lower temp values required. 
 - Uncomment hardware upgrade code in _Macro.cfg_ and _printer.cfg_ for Neopixel nozzle LED and chamber fan if installed.
 -> Search for "uncomment" in gcode to see and unlock the options. It is already preconfigured but not active.
+Neopixel wiring instructions see Nadirs tutorial: https://www.printables.com/model/938796-sv08-cn3d-shroud-v3-extra-fan-magnets-klicky-led
 - (optional PID Tuning (Menu in LCD display))
 - Calibrate Z-offset (Menu in LCD display) - Important!
 - Quad Gantry Level (Menu in LCD display) - Important
