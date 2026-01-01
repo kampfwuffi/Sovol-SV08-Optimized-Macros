@@ -135,7 +135,7 @@ Be sure the tabs stops are still  inserted in section  [quad_gantry_level] coord
 - Belt Test - Important
 - The individual printer calibration settings will be stored in modified printer.cfg (section SAVE_CONFIG)
 
-## **STEP 4: NOZZLE SIZE SETTING (e.g. 0.4mm or 0.6 mm):**
+## **STEP 4: NOZZLE SIZE AND OTHER SETTINGS (e.g. 0.4mm or 0.6 mm):**
 
 Set your 0.4mm or 0.6mm (Orca) slicer presets.  <br />
 Then modify (Orca) slicer printer settings and set nozzle diameter in Extruder 1 tab (Nozzle diameter: 0.4 or 0.6 mm). <br />
@@ -149,13 +149,14 @@ nozzle_diameter: 0.400
 ```
 (Default = 0.6mm)
 
-> [!TIP]
->It is NOT recommended to print PETG with the stock 0,4mm nozzle without the nozzle screw! 
->It may damage your bed and toolhead! Replace with upgrade nozzle or 3rd party upgrade by e.g. _Microswiss_
+## **STEP 5: GLOBAL VARIABLE SETTINGS AND PRINTER TESTING:**
+> [!IMPORTANT]
+Set global variables in Macro.cfg: <br />
+Many global variables are defined in global_variables inside Macro.cfg! E.g. Preheat temperature of nozzle and bed. <br />
+If the cleaning blob doesn't stick on the bed prior kick away, then raise bed preheat temp. If it sticks even after kick attempt, then lower bed temp in variables. It needs to be balanced according your filament, bed surface,...
 
-## **STEP 5: TEST PRINTER**
-
 > [!TIP]
+>- It is NOT recommended to print PETG with the stock 0,4mm nozzle without the nozzle screw! It may damage your bed and toolhead! Replace with upgrade nozzle or 3rd party upgrade by e.g. _Microswiss_
 >- Check all fans in Mainsail with sliders
 >- I recommend to upgrade your SV08 with this mod to avoid nozzle cleaning blobs and other residuals getting into the Z-belt mechanics: https://www.printables.com/model/1257347-sovol-sv08-z-belt-cover
 >- To fix your bed (TACO SHAPE) do this fix: https://www.printables.com/model/1073040-sovol-sv08-taco-bed-fix
