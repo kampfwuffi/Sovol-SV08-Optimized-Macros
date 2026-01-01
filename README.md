@@ -149,10 +149,10 @@ nozzle_diameter: 0.400
 ```
 (Default = 0.6mm)
 
-## **STEP 5: GLOBAL VARIABLE SETTINGS AND PRINTER TESTING:**
+## **STEP 5: GLOBAL VARIABLE (_global_var) SETTINGS AND PRINTER TESTING:**
 > [!IMPORTANT]
 Set global variables in Macro.cfg: <br />
-Many global variables are defined in global_variables inside Macro.cfg! E.g. Preheat temperature of nozzle and bed. <br />
+Many global variables are defined in _global_var inside Macro.cfg! E.g. Preheat temperature of nozzle and bed. <br />
 If the cleaning blob doesn't stick on the bed prior kick away, then raise bed preheat temp. If it sticks even after kick attempt, then lower bed temp in variables. It needs to be balanced according your filament, bed surface,...
 
 > [!TIP]
