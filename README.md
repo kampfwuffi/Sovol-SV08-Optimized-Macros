@@ -1,5 +1,6 @@
 # **Optimized Macro.cfg &amp; printer.cfg & (Orca) slicer Start G-Code for stock Sovol SV08**
-
+[<img src="https://img.youtube.com/vi/hSzaQeooK4I/hqdefault.jpg" width="600" height="480"
+/>](https://www.youtube.com/embed/hSzaQeooK4I)
 ## **HOW HARD IS IT TO IMPLEMENT?**
 
 > [!IMPORTANT]
