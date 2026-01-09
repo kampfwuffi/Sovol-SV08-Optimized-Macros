@@ -51,18 +51,8 @@ I reduced the code to a single line in the slicer profile, so start gcode is ins
 ### **_Macro.cfg_**
 (full code in downloadable file)
 
-Paste over old code in (Orca) slicer Device Tab (= Klipper Mainsail) -> Machine -> Macro.cfg (Save & Reboot)
-
-Be sure to have full code from:
-```
-[gcode_macro BEEP]
-...
-```
-to
-```
-...
-#-----------MOD END - LED MACROS TO SET LCD COLORS------------------#
-```
+Copy&Paste new code over old code in (Orca) slicer Device Tab (= Klipper Mainsail) -> Machine -> Macro.cfg (Save & Reboot)
+Be sure to replace the whole code!
 
 ### **_printer.cfg_**
 (full code in downloadable file)
@@ -70,6 +60,7 @@ to
 paste over old code in Orca Device Tab -> Machine -> _printer.cfg_ (Save & Reboot)
 
 Be sure the tabs stops are still  inserted in section  [quad_gantry_level] coordinates.
+Be sure to replace the whole code! Then:
 
 > [!CAUTION]
 > YOU MUST PASTE YOUR PRINTER/KLIPPER SERIAL IN FOLLOWING SECTIONS:
